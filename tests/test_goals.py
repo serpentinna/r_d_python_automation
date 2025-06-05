@@ -17,7 +17,7 @@ def test_create_goal():
 
 def test_get_goal():
     result = get_goal()
-    first_goal_id = result.json()["goals"][0]["id"]
+    first_goal_id = result.json()["goal"]["id"]
     assert result.json()["goal"]["id"] == first_goal_id
 
 def test_update_goal():
